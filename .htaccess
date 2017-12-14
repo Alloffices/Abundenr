@@ -1,0 +1,11 @@
+Options -Indexes
+DirectoryIndex home.php index.php
+
+ErrorDocument 400 /feedback.php?e=400
+ErrorDocument 401 /feedback.php?e=401
+ErrorDocument 403 /feedback.php?e=403
+ErrorDocument 404 /feedback.php?e=404
+ErrorDocument 500 /feedback.php?e=500
+# BEGIN WordPress
+
+# END WordPress

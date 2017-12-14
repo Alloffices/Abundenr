@@ -1,0 +1,21 @@
+/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* zurb.com */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: PHP, jQuery
+  Software: Coda, Textmate, Git
+
+/* TEAM */
+	Web designer: Linda Wolf
+	Contact: herfirstname [at] activecanvas [d o t] com
+	From: USA
+
+	Web developer: Eric Wolf
+	Contact: hisfirstname [at] activecanvas [d o t] com
+	From: USA
+
+/* THANKS */
+	Guru: Michael Lowry
+	From: USA

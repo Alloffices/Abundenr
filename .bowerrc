@@ -1,0 +1,16 @@
+{
+  "analytics": true,
+  "directory": "components",
+  "proxy": "http://proxy.local",
+  "color": true,
+  "timeout": 60000,
+  "storage": {
+    "packages" : "~/.bower/packages",
+    "registry" : "~/.bower/registry",
+    "links" : "~/.bower/links"
+  },
+  "interactive": true,
+  "resolvers": [
+    "mercurial-bower-resolver"
+  ]
+}

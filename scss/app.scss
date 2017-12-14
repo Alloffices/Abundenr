@@ -1,0 +1,209 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Title : Abundant Energy, Inc.
+Author : Eric Wolf | http://www.activecanvas.com
+URL : http://www.abundantenergy.com
+
+Description : HTML5 main CSS3 style sheet for Abundant Energy's website
+
+Created : 5/26/2007
+Version : 2015.12.28
+- - - - - - - - - - - - - - - - - - - - - */
+@charset 'utf-8';
+
+@import 'settings';
+
+/* ----- DOCUMENT ----- */
+
+div.row, div.columns{background-color:transparent;}
+div.expanded div:first-child{margin:0 auto;}
+
+#foto{background:url(/images/bkgd/sky.jpg) 50% 0 no-repeat;}
+#grad{background:url(/images/bkgd/gradient.png) 0 0 repeat-x;}/*
+#w_bx{background:rgba(205, 92, 92, 0.5);}*/
+#w_bx{background:rgba(219, 95, 11, 0.5);}
+#w_nv{background:$silver;z-index:50;}
+#w_mp{background:$smoke;}
+#nimg{background:$white;}
+#sitemap{background:$smoke;padding-top:.75em;}
+
+section#callout_box{
+position:relative;
+margin:4em auto 0;
+height:380px;
+background:url(/images/bkgd/solar_panels.jpg) 50% 0 no-repeat;
+z-index:30;
+}
+section#callout_box span{
+display:block;
+width:100%;
+margin:0;
+padding:0;
+text-align:center;
+color:$white;
+z-index:40;
+}
+
+section#callout_box hr{
+width:30%;
+margin:1em 35%;
+color:$white;
+}
+
+#hm_box{border:1px solid $dark-gray;}
+
+#news_blok{
+padding-top:2em;
+padding-bottom:2em;
+background:$dark-gray;
+color:$white;
+}
+
+div.even{text-align:right;}
+.fine{font-size:x-small;}
+.bar_top{padding-top:2em;border-top:1px solid $white;}
+div.blok{padding-bottom:1em;}
+
+.button{
+border-radius:1em;
+}
+.circle{
+
+}
+
+
+h1, h3, h4{
+text-transform:uppercase;
+}
+
+h1{
+font-family: 'Open Sans Condensed', 'Helvetica Condensed', Helvetica, 'Arial Narrow', Arial, sans-serif;
+color:$redblack;
+margin-top:.5em;
+}
+h1#masthead{
+margin:.25em 0 .333em 0;
+padding:0;
+text-transform:none;
+text-align:center;
+font-family:Georgia, Times, "Times New Roman", serif;
+font-size:7em;
+line-height:1em;
+color:$white-smoke;
+@include breakpoint(medium only) {
+font-size:4.5em;
+}
+@include breakpoint(small only) {
+font-size:2.5em;
+}
+}
+#nimg h1#masthead{
+color:$gainsboro;
+filter:Alpha(opacity=100);
+opacity:1;
+}
+#foto h1#masthead{color:$silver;}
+#foto h1#masthead span{color:$orange;}
+
+section#callout_box h1{margin-top:0;color:$white;}
+
+h2{
+border-bottom:1px solid $redblack;
+padding-bottom:.5em;
+font-style:italic;
+font-size:1.2em;
+}
+section#callout_box h2{
+margin:0;
+border:none;
+padding:2em 0 0;
+font-family:Georgia, Times, "Times New Roman", serif;
+font-weight:bold;
+}
+section#callout_box p{
+font-weight:bold;
+}
+/*
+h3{font-weight:bold;}*/
+
+div#sitemap h5{
+font-size:.9em;
+font-weight:bold;
+}
+
+div#sitemap p{
+font-size:.8em;
+}
+
+blockquote{
+border:none;
+font-style:italic;
+}
+
+ul.notmenu{padding-left:2em;}
+ul.menu{
+margin-left:auto;
+margin-right:auto;
+background:$silver;
+@include breakpoint(small only) {
+@include menu-direction(vertical);
+}
+}
+ul.menu li{
+width:90%;
+}
+
+
+/* ----- IMAGES ----- */
+img#swim{width:50px;}
+img#grid{height:50px;}
+img#bill{height:50px;}
+img#valu{height:50px;}
+img#sust{height:50px;}
+img#foot{height:50px;}
+
+div#sitemap img{padding:.25em 1em .5em 0;}
+
+img.logo{padding-top:2em;}
+
+
+/* ----- LINKS ----- */
+
+a:link {color:$orange;text-decoration:underline;}
+a:visited {color:$orange;}
+a:hover{color:$hover_clr;}
+
+ul.menu li a{text-decoration:none;}
+ul.menu li.self{padding-left:1em;font-weight:bold;}
+
+#w_mp h5 a{
+text-decoration:none;
+}
+
+form .button, a.circle{
+background:$orange;
+color:$white;
+}
+a.circle{
+margin:.5em 0 1.5em;
+border-radius:1em;
+padding:.1em .5em .5em .6em;
+text-decoration:none;
+font-size:large;
+font-weight:bold;
+line-height:1em;
+}
+form .button:hover, a.circle:hover{
+background:$white;
+color:$orange;
+}
+
+
+a[href$=".pdf"] {  
+    background: url(/images/icons/pdf.png) center right no-repeat;  
+    padding-right:20px;
+}
+
+form .button{
+font-weight:bold;
+}
